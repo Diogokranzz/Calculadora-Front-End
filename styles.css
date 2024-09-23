@@ -1,0 +1,60 @@
+/* styles.css */
+body {
+    background-color: #0e0e0e; /* Cor de fundo escura */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Roboto', sans-serif; /* Fonte padrão */
+}
+
+.container {
+    background: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDEwfHx0ZWNobm9sb2d5fGVufDB8fHx8MTY4MjQyNjQyMA&ixlib=rb-4.0.3&q=80&w=400') no-repeat center center; /* Imagem de fundo de tecnologia */
+    background-size: cover; /* Cobre todo o container */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Sombra para destacar */
+    padding: 20px;
+}
+
+#display {
+    width: 100%;
+    height: 40px;
+    font-size: 24px;
+    text-align: right;
+    margin-bottom: 10px;
+    border: 2px solid #ff6f61; /* Cor de borda chamativa */
+    border-radius: 5px;
+    padding: 5px;
+    font-weight: bold; /* Texto em negrito */
+    font-family: 'Pacifico', cursive; /* Fonte exótica para o display */
+    background: rgba(255, 255, 255, 0.8); /* Fundo branco com leve transparência */
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    padding: 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background-color: #ff6f61; /* Cor de fundo chamativa */
+    color: white;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    font-weight: bold; /* Texto em negrito */
+}
+
+button:hover {
+    background-color: #ff3d3d; /* Cor ao passar o mouse */
+    transform: scale(1.1); /* Aumenta o botão ao passar o mouse */
+}
+
+button:active {
+    transform: scale(0.95); /* Efeito de pressionar */
+}
